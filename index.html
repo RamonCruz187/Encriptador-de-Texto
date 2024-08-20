@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="encriptador__logo">
+            <img src="assets/Logo.png" alt="Logo de Alura">
+        </div>
+    </div>
+    <div class="encriptador">
+        
+        <div >
+            <input class="encriptador__input" type="text" placeholder="Ingrese el texto aqui">
+        </div>
+        <div class="encriptador__boton">
+            <div class="encriptador__boton__info" ><img src="assets/bi_exclamation-circle-fill.png" alt="advertencia"><p>Solo letras minúsculas y sin acentos.</p></div>
+           
+           <div class="encriptador__boton__botones">
+            <button class="encriptador__botones__encriptar">Encriptar</button>
+            <button class="encriptador__botones__desencriptar">Desencriptar</button>
+           </div>
+            
+        </div>
+
+    </div>
+    
+    <div class="desencriptador">
+        <div class="desencriptador__imagen"></div>
+        <div class="desencriptador__h2">
+            <h2>Ningún mensaje fue encontrado</h2>
+        </div>
+        <div class="desencriptador__p">
+            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
