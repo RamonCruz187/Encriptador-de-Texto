@@ -4,8 +4,8 @@
     margin: 0;
 }
 
-body{
-    height: 90vh;
+main{
+    height: 85vh;
     padding: 40px;
     background-color: #EFF1FA;
     display: flex;
@@ -87,11 +87,16 @@ body{
 .desencriptador{
     background-color: #FFFFFF;
     width: 500px;
-    height: 85vh;
+    height: 80vh;
     border-radius: 32px;
     padding: 32px;
     margin-left: 80px;
     justify-content: center;
+}
+
+.desencriptador__imagen{
+    width: 336px;
+    height: 304px;
 }
 
 .desencriptador__h2{
@@ -103,9 +108,17 @@ body{
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
+    color: #343A40;
+    margin-top: 32px;
 }
 
 .desencriptador__p{
     display: flex;
     justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343A40;
+    text-align: center;
+    margin-top: 16px;
 }
