@@ -19,14 +19,15 @@
     <div class="encriptador">
         
         <div >
-            <input class="encriptador__input" type="text" placeholder="Ingrese el texto aqui">
+            <textarea class="encriptador__input" rows="5"  id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            
         </div>
         <div class="encriptador__boton">
-            <div class="encriptador__boton__info" ><img src="assets/bi_exclamation-circle-fill.png" alt="advertencia"><p>Solo letras minúsculas y sin acentos.</p></div>
+            <div class="encriptador__boton__info" ><img src="assets/bi_exclamation-circle-fill.png" alt="advertencia" width="16" height="16"><p>Solo letras minúsculas y sin acentos.</p></div>
            
            <div class="encriptador__boton__botones">
-            <button class="encriptador__botones__encriptar">Encriptar</button>
-            <button class="encriptador__botones__desencriptar">Desencriptar</button>
+            <button onclick="encriptar()" class="encriptador__botones__encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="encriptador__botones__desencriptar">Desencriptar</button>
            </div>
             
         </div>
@@ -34,8 +35,8 @@
     </div>
     
     <div class="desencriptador">
-        <div class="desencriptador__imagen">
-            <img src="assets/Muñeco.png" alt="Muñeco">
+        <div >
+            <img class="desencriptador__imagen" src="assets/Muñeco.png" alt="Muñeco">
         </div>
         <div class="desencriptador__h2">
             <h2>Ningún mensaje fue encontrado</h2>
@@ -47,6 +48,7 @@
     </div>
 
     <script src="app.js"></script>
-</body>
 </main>
+</body>
+
 </html>
