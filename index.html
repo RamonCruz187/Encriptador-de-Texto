@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-    <div>
+      <div>
         <div class="encriptador__logo">
-            <img src="assets/Logo.png" alt="Logo de Alura">
+          <img src="assets/Logo.png" alt="Logo de Alura" />
         </div>
-    </div>
-    <div class="encriptador">
-        
-        <div >
-            <textarea class="encriptador__input" rows="5"  id="texto" placeholder="Ingrese el texto aqui"></textarea>
-            
+      </div>
+      <div class="encriptador">
+        <div>
+          <textarea
+            class="encriptador__input"
+            rows="5"
+            id="texto"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
         </div>
         <div class="encriptador__boton">
-            <div class="encriptador__boton__info" ><img src="assets/bi_exclamation-circle-fill.png" alt="advertencia" width="16" height="16"><p>Solo letras minúsculas y sin acentos.</p></div>
-           
-           <div class="encriptador__boton__botones">
-            <button onclick="encriptar()" class="encriptador__botones__encriptar">Encriptar</button>
-            <button onclick="desencriptar()" class="encriptador__botones__desencriptar">Desencriptar</button>
-           </div>
-            
-        </div>
+          <div class="encriptador__boton__info">
+            <img
+              src="assets/bi_exclamation-circle-fill.png"
+              alt="advertencia"
+              width="16"
+              height="16"
+            />
+            <p>Solo letras minúsculas y sin acentos.</p>
+          </div>
 
-    </div>
-    
-    <div class="desencriptador">
-        <div >
-            <img class="desencriptador__imagen" src="assets/Muñeco.png" alt="Muñeco">
+          <div class="encriptador__boton__botones">
+            <button
+              onclick="encriptar()"
+              class="encriptador__botones__encriptar"
+              disabled
+            >
+              Encriptar
+            </button>
+            <button
+              onclick="desencriptar()"
+              class="encriptador__botones__desencriptar"
+              disabled
+            >
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desencriptador">
+        <div class="desencriptador__textoEscondido">
+          <p class="desencriptador__textoEscondido__p"></p>
+        </div>
+        <div>
+          <img
+            class="desencriptador__imagen"
+            src="assets/Muñeco.png"
+            alt="Muñeco"
+          />
         </div>
         <div class="desencriptador__h2">
-            <h2>Ningún mensaje fue encontrado</h2>
+          <h2>Ningún mensaje fue encontrado</h2>
         </div>
         <div class="desencriptador__p">
-            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+          <p>Ingrese el texto que desee encriptar o desencriptar</p>
         </div>
+        <div class="desencriptador__boton">
+          <button
+            onclick="copiarTexto()"
+            class="desencriptador__boton__escondido"
+          >
+            Copiar
+          </button>
+        </div>
+      </div>
 
-    </div>
-
-    <script src="app.js"></script>
-</main>
-</body>
-
+      <script src="app.js"></script>
+    </main>
+  </body>
 </html>
